@@ -50,16 +50,13 @@
             <h3 class="day__date">
               Wed, <span class="day__date--not-bold">June 10</span>
             </h3>
-            <p class="day__total-time">
-              06:05:00
-              <progress
-                class="day__progress-bar"
-                max="8"
-                value="6.05"
-              ></progress>
-              <!-- <span class="day__progress-bar"></span> -->
-            </p>
-            <button class="btn day__btn-download">
+            <div class="day__total-time--wrapper">
+              <p class="day__total-time">06:05:00</p>
+              <div class="day__progress-bar">
+                <div class="day__progress-value"></div>
+              </div>
+            </div>
+            <button class="day__btn-download">
               <span class="visually-hidden">Download</span>
             </button>
           </div>
@@ -139,11 +136,14 @@
             <h3 class="day__date">
               Tue, <span class="day__date--not-bold">June 9</span>
             </h3>
-            <p class="day__total-time">
-              08:00:00
-              <progress class="day__progress-bar" max="8" value="8"></progress>
-              <span class="day__progress-bar"></span>
-            </p>
+            <div class="day__total-time--wrapper">
+              <p class="day__total-time">08:00:00</p>
+              <div class="day__progress-bar">
+                <div
+                  class="day__progress-value day__progress-value--full"
+                ></div>
+              </div>
+            </div>
             <button class="btn day__btn-download">
               <span class="visually-hidden">Download</span>
             </button>

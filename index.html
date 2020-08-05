@@ -50,27 +50,32 @@
             <h3 class="day__date">
               Wed, <span class="day__date--not-bold">June 10</span>
             </h3>
-            <p class="day__total-time">
-              06:05:00
-              <progress
-                class="day__progress-bar"
-                max="8"
-                value="6.05"
-              ></progress>
-              <!-- <span class="day__progress-bar"></span> -->
-            </p>
-            <button class="btn day__btn-download">
+            <div class="day__total-time--wrapper">
+              <p class="day__total-time">06:05:00</p>
+              <div class="day__progress-bar">
+                <div class="day__progress-value"></div>
+              </div>
+            </div>
+            <button class="day__btn-download">
               <span class="visually-hidden">Download</span>
             </button>
           </div>
           <ul class="day__worklogs-list">
             <li class="day__worklog-item">
-              <span class="day__interval-time">09:00 - 10:00</span>
-              <span class="day__code">JRM-310</span>
-              <h4 class="day__worklog-name">Team standup</h4>
-              <progress class="day__progress-bar" max="1" value="0"></progress>
+              <p class="day__interval-time">
+                09:00 <span class="day__interval-time--gray">— 10:00</span>
+              </p>
+              <div class="day__worklog-name-wrapper">
+                <span class="day__code">JRM-310</span>
+                <h4 class="day__worklog-name">Team standup</h4>
+              </div>
+              <div class="day__worklog-bar">
+                <div class="day__worklog-value"></div>
+              </div>
               <span class="day__worklog-time">01:00:00</span>
-              <button class="day__btn">Play</button>
+              <button class="day__btn">
+                <span class="visually-hidden">Play</span>
+              </button>
               <ul class="worklog-options">
                 <li class="worklog-options__item">Jira link</li>
                 <li class="worklog-options__item">Duplicate</li>
@@ -79,16 +84,22 @@
               </ul>
             </li>
             <li class="day__worklog-item">
-              <span class="day__interval-time">10:00 - 11:15</span>
-              <span class="day__code">JRM-310</span>
-              <h4 class="day__worklog-name">Meeting with QA</h4>
-              <progress
-                class="day__progress-bar"
-                max="1.15"
-                value="1.15"
-              ></progress>
+              <p class="day__interval-time">
+                10:00 <span class="day__interval-time--gray">— 11:15</span>
+              </p>
+              <div
+                class="day__worklog-name-wrapper day__worklog-name-wrapper--full"
+              >
+                <span class="day__code">JRM-310</span>
+                <h4 class="day__worklog-name">Meeting with QA</h4>
+              </div>
+              <div class="day__worklog-bar">
+                <div class="day__worklog-value day__worklog-value--full"></div>
+              </div>
               <span class="day__worklog-time">01:15:00</span>
-              <button class="day__btn">Play</button>
+              <button class="day__btn">
+                <span class="visually-hidden">Play</span>
+              </button>
               <ul class="worklog-options">
                 <li class="worklog-options__item">Jira link</li>
                 <li class="worklog-options__item">Duplicate</li>
@@ -97,16 +108,24 @@
               </ul>
             </li>
             <li class="day__worklog-item">
-              <span class="day__interval-time">2</span>
-              <span class="day__code">JRM-310</span>
-              <h4 class="day__worklog-name">Company branding</h4>
-              <progress
-                class="day__progress-bar"
-                max="3.5"
-                value="1.3"
-              ></progress>
+              <div class="day__interval-time-btn">
+                <span class="day__amount">2</span>
+              </div>
+              <div
+                class="day__worklog-name-wrapper day__worklog-name-wrapper--in-progress"
+              >
+                <span class="day__code">JRM-310</span>
+                <h4 class="day__worklog-name">Company branding</h4>
+              </div>
+              <div class="day__worklog-bar">
+                <div
+                  class="day__worklog-value day__worklog-value--in-progress"
+                ></div>
+              </div>
               <span class="day__worklog-time">03:50:00</span>
-              <button class="day__btn">Play</button>
+              <button class="day__btn">
+                <span class="visually-hidden">Play</span>
+              </button>
               <ul class="worklog-options">
                 <li class="worklog-options__item">Jira link</li>
                 <li class="worklog-options__item">Duplicate</li>
@@ -116,7 +135,7 @@
             </li>
           </ul>
           <div class="day__time-picker">
-            <span class="day__time-picher-range"></span>
+            <div class="day__time-picher-range"></div>
             <ul class="day__time-list">
               <li>07:00</li>
               <li>08:00</li>
@@ -137,29 +156,38 @@
         <section class="day">
           <div class="day__heading-wrapper">
             <h3 class="day__date">
-              Tue, <span class="day__date--not-bold">June 9</span>
+              Tue, <span class="day__date--not-bold">June 09</span>
             </h3>
-            <p class="day__total-time">
-              08:00:00
-              <progress class="day__progress-bar" max="8" value="8"></progress>
-              <span class="day__progress-bar"></span>
-            </p>
+            <div class="day__total-time--wrapper">
+              <p class="day__total-time">08:00:00</p>
+              <div class="day__progress-bar">
+                <div
+                  class="day__progress-value day__progress-value--full"
+                ></div>
+              </div>
+            </div>
             <button class="btn day__btn-download">
               <span class="visually-hidden">Download</span>
             </button>
           </div>
           <ul class="day__worklogs-list">
             <li class="day__worklog-item">
-              <span class="day__interval-time">09:00 - 10:00</span>
-              <span class="day__code">JRM-310</span>
-              <h4 class="day__worklog-name">Team standup</h4>
-              <progress
-                class="day__progress-bar"
-                max="3.5"
-                value="0"
-              ></progress>
-              <span class="day__worklog-time">03:15:00</span>
-              <button class="day__btn">Play</button>
+              <p class="day__interval-time">
+                09:00 <span class="day__interval-time--gray">— 10:00</span>
+              </p>
+              <div
+                class="day__worklog-name-wrapper day__worklog-name-wrapper--full"
+              >
+                <span class="day__code">JRM-310</span>
+                <h4 class="day__worklog-name">Team standup</h4>
+              </div>
+              <div class="day__worklog-bar">
+                <div class="day__worklog-value"></div>
+              </div>
+              <span class="day__worklog-time">01:00:00</span>
+              <button class="day__btn">
+                <span class="visually-hidden">Play</span>
+              </button>
               <ul class="worklog-options">
                 <li class="worklog-options__item">Jira link</li>
                 <li class="worklog-options__item">Duplicate</li>
@@ -168,16 +196,22 @@
               </ul>
             </li>
             <li class="day__worklog-item">
-              <span class="day__interval-time">10:00 - 11:15</span>
-              <span class="day__code">JRM-310</span>
-              <h4 class="day__worklog-name">Meeting with QA</h4>
-              <progress
-                class="day__progress-bar"
-                max="1.15"
-                value="0"
-              ></progress>
+              <p class="day__interval-time">
+                10:00 <span class="day__interval-time--gray">— 11:15</span>
+              </p>
+              <div
+                class="day__worklog-name-wrapper day__worklog-name-wrapper--full"
+              >
+                <span class="day__code">JRM-310</span>
+                <h4 class="day__worklog-name">Meeting with QA</h4>
+              </div>
+              <div class="day__worklog-bar">
+                <div class="day__worklog-value"></div>
+              </div>
               <span class="day__worklog-time">01:15:00</span>
-              <button class="day__btn">Play</button>
+              <button class="day__btn">
+                <span class="visually-hidden">Play</span>
+              </button>
               <ul class="worklog-options">
                 <li class="worklog-options__item">Jira link</li>
                 <li class="worklog-options__item">Duplicate</li>
@@ -186,16 +220,22 @@
               </ul>
             </li>
             <li class="day__worklog-item">
-              <span class="day__interval-time">11:00 - 13:15</span>
-              <span class="day__code">JRM-310</span>
-              <h4 class="day__worklog-name">Company branding</h4>
-              <progress
-                class="day__progress-bar"
-                max="3.5"
-                value="0"
-              ></progress>
+              <p class="day__interval-time">
+                11:00 <span class="day__interval-time--gray">— 13:15</span>
+              </p>
+              <div
+                class="day__worklog-name-wrapper day__worklog-name-wrapper--in-progress"
+              >
+                <span class="day__code">JRM-310</span>
+                <h4 class="day__worklog-name">Company branding</h4>
+              </div>
+              <div class="day__worklog-bar">
+                <div class="day__worklog-value"></div>
+              </div>
               <span class="day__worklog-time">03:50:00</span>
-              <button class="day__btn">Play</button>
+              <button class="day__btn">
+                <span class="visually-hidden">Play</span>
+              </button>
               <ul class="worklog-options">
                 <li class="worklog-options__item">Jira link</li>
                 <li class="worklog-options__item">Duplicate</li>
@@ -205,7 +245,7 @@
             </li>
           </ul>
           <div class="day__time-picker">
-            <span class="day__time-picher-range"></span>
+            <div class="day__time-picher-range"></div>
             <ul class="day__time-list">
               <li>07:00</li>
               <li>08:00</li>

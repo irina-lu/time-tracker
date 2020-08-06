@@ -268,10 +268,12 @@
     </section>
 
     <section class="google-sync">
-      <h2 class="google-sync__title">Google calendar sync</h2>
-      <input class="visually-hidden" type="checkbox" name="sync-checkbox" />
-      <span class="google-sync__checkbox"></span>
-      <button class="google-sync__calendar"></button>
+      <div class="google-sync__title-wrapper">
+        <h2 class="google-sync__title">Google calendar sync</h2>
+        <input id="google-check" class="visually-hidden google-sync__checkbox" type="checkbox" name="sync-checkbox" />
+        <label for="google-check" class="google-sync__label"></label>
+        <button class="google-sync__calendar"><span class="visually-hidden">Open calendar</span></button>
+      </div>
     </section>
   </main>
 </body>

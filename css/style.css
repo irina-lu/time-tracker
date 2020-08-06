@@ -23,7 +23,7 @@ body {
 
 .heading-btn {
   border: none;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   border-radius: 30px;
@@ -140,12 +140,12 @@ body {
 
 .page-main {
   max-width: 1920px;
-  padding: 50px 60px 0 72px;
+  padding: 50px 0 0 72px;
   margin: 0 auto;
   color: #1e1e1e;
 
   display: grid;
-  grid-template-columns: 68.5% 31.5%;
+  grid-template-columns: 66.23% 33.76%;
   grid-template-rows: 364px 100%;
 }
 
@@ -168,7 +168,6 @@ body {
   font-size: 16px;
   color: #3744bd;
   padding: 20px 62px 13px 33px;
-  border-radius: 30px;
 }
 
 .days-list__calendar::after {
@@ -464,4 +463,83 @@ body {
   color: #C4CACB;
   display: flex;
   justify-content: space-between;
+}
+
+.time-tracking {
+  padding-left: 38px;
+  padding-top: 10px;
+  padding-right: 60px;
+  border-bottom: 1px solid #E9ECF2;
+}
+
+.time-tracking__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.time-tracking__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+.time-tracking__options {
+  padding: 13px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.time-tracking__round {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #C4CACB;
+  box-shadow: 7px 0px 0px 0px #c4cacb, -7px 0px 0px 0px #c4cacb;
+}
+
+.time-tracking__btn {
+  padding: 0;
+  border: none;
+  display: block;
+  margin-left: 236px;
+  margin-bottom: 23px;
+  position: relative;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
+}
+
+.time-tracking__btn:hover {
+  box-shadow: 0px 10px 30px rgba(163, 163, 163, 0.44);
+}
+
+.time-tracking__btn::after,
+.time-tracking__btn::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 25px;
+  width: 16px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #3744BD;
+}
+
+.time-tracking__btn::after {
+  transform: rotate(90deg);
+}
+
+.time-tracking__phrase {
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 214px;
+  color: #C4CACB;
 }

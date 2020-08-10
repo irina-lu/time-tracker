@@ -1,0 +1,126 @@
+@import "color";
+
+.google-sync {
+    padding: 30px 60px 0 38px;
+}
+
+.google-sync__title-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.google-sync__title {
+    margin: 0;
+    padding: 0;
+    margin-right: 21px;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.google-sync__label {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 16px;
+    background-color: $font-gray;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 10px;
+        height: 10px;
+        background-color: $white;
+        border-radius: 50%;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in;
+    }
+}
+
+.google-sync__checkbox:checked+.google-sync__label {
+    background-color: $violet;
+    transition: background-color 0.3s ease-in;
+
+    &::before {
+        transform: translateX(12px);
+        transition: transform 0.3s ease-in;
+    }
+}
+
+.google-sync__calendar {
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    background-image: url("../img/icon/calendar-gray.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-image: url("../img/icon/calendar.svg");
+    }
+}
+
+.google-sync__event-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.google-sync__event-item {
+    position: relative;
+    padding: 0 40px;
+    padding-top: 27px;
+    margin-bottom: 10px;
+    min-height: 168px;
+    border-radius: 10px;
+    background: $background-item;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -1px;
+        top: 46px;
+        width: 3px;
+        height: 76px;
+        border-radius: 1px;
+    }
+
+    &_turquoise::before {
+        background-color: $turquoise;
+    }
+
+    &_orange::before {
+        background-color: $orange;
+    }
+
+    &_lavender::before {
+        background-color: $lavender;
+    }
+}
+
+.google-sync__event-name {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 500;
+}
+
+.google-sync__event-time {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 500;
+}

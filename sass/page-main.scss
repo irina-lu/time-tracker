@@ -1,0 +1,16 @@
+@import 'color';
+
+.page-main {
+    max-width: 1920px;
+    padding: 50px 0 0 72px;
+    margin: 0 auto;
+    color: $font-black;
+
+    display: grid;
+    grid-template-columns: 66.23% 33.76%;
+    grid-template-rows: 364px 1fr;
+}
+
+.page-main__day-list {
+    grid-row: 1/3;
+}

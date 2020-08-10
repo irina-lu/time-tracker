@@ -4,3 +4,42 @@
     max-width: 1781px;
     margin: 0 auto;
 }
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav__item {
+    position: relative;
+    width: 77px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-right: 48px;
+    text-align: center;
+    cursor: pointer;
+
+    &_active::after,
+    &:hover::after {
+        content: "";
+        position: absolute;
+        bottom: -29px;
+        left: 0;
+        width: 77px;
+        height: 3px;
+        border-radius: 3px;
+        background-color: $white;
+    }
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: $white;
+}

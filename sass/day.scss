@@ -91,6 +91,7 @@
 }
 
 .day__worklog-item {
+    position: relative;
     display: flex;
     align-items: center;
     padding-left: 33px;
@@ -234,6 +235,12 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+}
+
+.day__worklog-menu {
+    display: none;
+    top: 93px;
+    right: -24px;
 }
 
 .day__time-picker {}

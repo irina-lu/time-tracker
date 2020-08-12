@@ -278,6 +278,7 @@ body {
   margin-bottom: 45px; }
 
 .day__worklog-item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,6 +413,11 @@ body {
     background-position: center;
     background-repeat: no-repeat; }
 
+.day__worklog-menu {
+  display: none;
+  top: 93px;
+  right: -24px; }
+
 .day__time-picher-range {
   width: 100%;
   height: 23px;
@@ -437,6 +443,7 @@ body {
           justify-content: space-between; }
 
 .time-tracking {
+  position: relative;
   padding-left: 38px;
   padding-top: 10px;
   padding-right: 60px;
@@ -463,6 +470,15 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer; }
+
+.time-tracking__menu {
+  display: none;
+  top: 40px;
+  right: 63px; }
+
+.time-tracking__options:hover ~ .time-tracking__menu,
+.time-tracking__options:focus ~ .time-tracking__menu {
+  display: block; }
 
 .time-tracking__round {
   display: block;
@@ -631,7 +647,31 @@ body {
   font-weight: 500; }
 
 .worklog-options {
-  display: none; }
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 8px 0;
+  width: 169px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
+          box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
+  border-radius: 10px; }
+
+.worklog-options__btn {
+  border: none;
+  padding: 11px 15px 10px 32px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 23px;
+  color: #4F4F4F;
+  width: 100%;
+  text-align: start;
+  cursor: pointer; }
+  .worklog-options__btn:hover, .worklog-options__btn:focus {
+    outline: none;
+    background-color: #E3F3FF; }
 
 .notification {
   display: none;

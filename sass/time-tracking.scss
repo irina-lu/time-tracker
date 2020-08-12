@@ -1,6 +1,7 @@
 @import 'color';
 
 .time-tracking {
+    position: relative;
     padding-left: 38px;
     padding-top: 10px;
     padding-right: 60px;
@@ -26,6 +27,17 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+.time-tracking__menu {
+    display: none;
+    top: 40px;
+    right: 63px;
+}
+
+.time-tracking__options:hover~.time-tracking__menu,
+.time-tracking__options:focus~.time-tracking__menu {
+    display: block;
 }
 
 .time-tracking__round {

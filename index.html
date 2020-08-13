@@ -22,16 +22,24 @@
         </ul>
         <ul class="user-list">
           <li class="user-list__item user-list__item_settings">
-            <a href="#"><span class="visually-hidden">Settings</span></a>
+            <a class="user-list__link" href="#"
+              ><span class="visually-hidden">Settings</span></a
+            >
           </li>
           <li class="user-list__item user-list__item_info">
-            <a href="#"><span class="visually-hidden">Information</span></a>
+            <a class="user-list__link" href="#"
+              ><span class="visually-hidden">Information</span></a
+            >
           </li>
           <li class="user-list__item user-list__item_exit">
-            <a href="#"><span class="visually-hidden">Log out</span></a>
+            <a class="user-list__link" href="#"
+              ><span class="visually-hidden">Log out</span></a
+            >
           </li>
           <li class="user-list__item user-list__item_profile">
-            <a href="#"><span class="visually-hidden">Your profile</span></a>
+            <a class="user-list__link user-list__link_profile" href="#"
+              ><span class="visually-hidden">Your profile</span></a
+            >
           </li>
         </ul>
       </nav>
@@ -42,8 +50,14 @@
         <h2 class="visually-hidden">Days List</h2>
         <div class="days-list__heading">
           <button class="heading-btn days-list__calendar">10 JUNE 2020</button>
-          <button class="heading-btn days-list__all">All</button>
-          <button class="heading-btn days-list__favorites">Favorites</button>
+          <button
+            class="heading-btn day__filter day__filter_margin day__filter_active"
+          >
+            All
+          </button>
+          <button class="heading-btn day__filter">
+            Favorites
+          </button>
         </div>
         <section class="day-list__item day">
           <div class="day__heading-wrapper">
@@ -370,6 +384,7 @@
       </section>
     </main>
     <section class="notification">
+      <h2 class="visually-hidden">Notification message</h2>
       <div class="notification__status-wrapper">
         <span class="notification__status"></span>
         <button class="notification__btn-close"></button>

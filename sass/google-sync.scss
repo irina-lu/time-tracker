@@ -43,6 +43,11 @@
     }
 }
 
+.google-sync__checkbox:hover+.google-sync__label,
+.google-sync__checkbox:focus+.google-sync__label {
+    background-color: rgba(55, 68, 189, 0.5);
+}
+
 .google-sync__checkbox:checked+.google-sync__label {
     background-color: $violet;
     transition: background-color 0.3s ease-in;
@@ -66,6 +71,7 @@
 
     &:hover,
     &:focus {
+        outline: none;
         background-image: url("../img/icon/calendar.svg");
     }
 }

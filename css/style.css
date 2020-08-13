@@ -26,11 +26,15 @@ body {
   padding: 26px 61px 19px 78px; }
 
 .heading-btn {
+  padding: 0;
   border: none;
   font-family: inherit;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 500;
+  color: #bbbbbb;
   border-radius: 30px;
+  background-color: transparent;
   cursor: pointer; }
 
 .nav {
@@ -68,7 +72,7 @@ body {
   margin-right: 48px;
   text-align: center;
   cursor: pointer; }
-  .nav__item_active::after, .nav__item:hover::after {
+  .nav__item_active::after {
     content: "";
     position: absolute;
     bottom: -29px;
@@ -80,7 +84,20 @@ body {
 
 .nav__item a {
   text-decoration: none;
+  display: inline-block;
+  width: 100%;
   color: #ffffff; }
+  .nav__item a:focus {
+    outline: none; }
+  .nav__item a:hover::after, .nav__item a:focus::after {
+    content: "";
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    width: 77px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #ffffff; }
 
 .user-list {
   margin: 0;
@@ -104,15 +121,6 @@ body {
   height: 20px;
   margin-right: 50px;
   cursor: pointer; }
-  .user-list__item:hover::after {
-    content: "";
-    position: absolute;
-    bottom: -32px;
-    left: -5px;
-    width: 30px;
-    height: 3px;
-    border-radius: 3px;
-    background-color: #ffffff; }
   .user-list__item_settings {
     background-image: url("../img/icon/settings.svg"); }
   .user-list__item_info {
@@ -124,10 +132,26 @@ body {
     height: 46px;
     margin-right: 0;
     background-image: url("../img/avatar.png"); }
-    .user-list__item_profile:hover::after {
-      bottom: -19px;
-      left: -5px;
-      width: 56px; }
+
+.user-list__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%; }
+  .user-list__link:focus {
+    outline: none; }
+  .user-list__link:hover::after, .user-list__link:focus::after {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    left: -5px;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #ffffff; }
+  .user-list__link_profile:hover::after, .user-list__link_profile:focus::after {
+    bottom: -19px;
+    left: -5px;
+    width: 56px; }
 
 .page-main {
   max-width: 1920px;
@@ -159,6 +183,7 @@ body {
   position: relative;
   background-color: #F0F3F5;
   font-size: 16px;
+  font-weight: 400;
   color: #3744BD;
   padding: 20px 62px 13px 33px; }
   .days-list__calendar::after {
@@ -170,24 +195,18 @@ body {
     height: 12px;
     background-image: url(../img/icon/calendar.svg); }
 
-.days-list__all {
+.day__filter_margin {
   margin-left: auto;
-  margin-right: 23px;
-  font-weight: 500;
-  color: #4F4F4F;
-  padding: 12px 29px 9px 29px;
-  background-color: #F0F3F5; }
+  margin-right: 23px; }
 
-.days-list__favorites {
-  padding: 0;
-  background: none;
-  font-weight: 500;
-  color: #bbbbbb;
+.day__filter:last-of-type {
   padding-right: 33px; }
-  .days-list__favorites:active {
-    background: #F0F3F5;
-    color: #4F4F4F;
-    padding: 10px 28px 12px 31px; }
+
+.day__filter_active {
+  padding: 10px 27px 11px 29px;
+  color: #4F4F4F;
+  background-color: #F0F3F5;
+  border-radius: 30px; }
 
 .day-list__item {
   margin-bottom: 75px; }
@@ -503,7 +522,8 @@ body {
   cursor: pointer;
   -webkit-box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
           box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13); }
-  .time-tracking__btn:hover {
+  .time-tracking__btn:hover, .time-tracking__btn:focus {
+    outline: none;
     -webkit-box-shadow: 0px 10px 30px rgba(163, 163, 163, 0.44);
             box-shadow: 0px 10px 30px rgba(163, 163, 163, 0.44); }
   .time-tracking__btn::after, .time-tracking__btn::before {
@@ -575,6 +595,10 @@ body {
     transition: transform 0.3s ease-in;
     transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in; }
 
+.google-sync__checkbox:hover + .google-sync__label,
+.google-sync__checkbox:focus + .google-sync__label {
+  background-color: rgba(55, 68, 189, 0.5); }
+
 .google-sync__checkbox:checked + .google-sync__label {
   background-color: #3744BD;
   -webkit-transition: background-color 0.3s ease-in;
@@ -601,6 +625,7 @@ body {
   background-repeat: no-repeat;
   cursor: pointer; }
   .google-sync__calendar:hover, .google-sync__calendar:focus {
+    outline: none;
     background-image: url("../img/icon/calendar.svg"); }
 
 .google-sync__event-list {
@@ -656,7 +681,8 @@ body {
   background: #ffffff;
   -webkit-box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
           box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
-  border-radius: 10px; }
+  border-radius: 10px;
+  z-index: 1; }
 
 .worklog-options__btn {
   border: none;

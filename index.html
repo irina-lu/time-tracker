@@ -10,324 +10,327 @@
 </head>
 
 <body>
-  <div class="site-wrapper">
-    <header class="page-header">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item nav__item_active"><a href="#">Home</a></li>
-          <li class="nav__item"><a href="#">Issues</a></li>
-          <li class="nav__item"><a href="#">Filer</a></li>
-          <li class="nav__item"><a href="#">Projects</a></li>
-        </ul>
-        <ul class="user-list">
-          <li class="user-list__item user-list__item_settings">
-            <a href="#"><span class="visually-hidden">Settings</span></a>
-          </li>
-          <li class="user-list__item user-list__item_info">
-            <a href="#"><span class="visually-hidden">Information</span></a>
-          </li>
-          <li class="user-list__item user-list__item_exit">
-            <a href="#"><span class="visually-hidden">Log out</span></a>
-          </li>
-          <li class="user-list__item user-list__item_profile">
-            <a href="#"><span class="visually-hidden">Your profile</span></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Time Tracker</h1>
-      <section class="page-main__day-list days-list">
-        <h2 class="visually-hidden">Days List</h2>
-        <div class="days-list__heading">
-          <button class="heading-btn days-list__calendar">10 JUNE 2020</button>
-          <button class="heading-btn days-list__all">All</button>
-          <button class="heading-btn days-list__favorites">Favorites</button>
-        </div>
-        <section class="day-list__item day">
-          <div class="day__heading-wrapper">
-            <h3 class="day__date">
-              Wed, <span class="day__date_not-bold">June 10</span>
-            </h3>
-            <div class="day__total-time-wrapper">
-              <p class="day__total-time">06:05:00</p>
-              <div class="day__progress-bar">
-                <div class="day__progress-value"></div>
-              </div>
-            </div>
-            <button class="day__btn-download">
-              <span class="visually-hidden">Download</span>
-            </button>
-          </div>
-          <ul class="day__worklogs-list">
-            <li class="day__worklog-item">
-              <p class="day__interval-time">
-                09:00 <span class="day__interval-time_gray">— 10:00</span>
-              </p>
-              <div class="day__worklog-name-wrapper">
-                <span class="day__code">JRM-310</span>
-                <h4 class="day__worklog-name">Team standup</h4>
-              </div>
-              <div class="day__worklog-bar">
-                <div class="day__worklog-value"></div>
-              </div>
-              <span class="day__worklog-time">01:00:00</span>
-              <button class="day__btn">
-                <span class="visually-hidden">Play</span>
-              </button>
-              <ul class="worklog-options">
-                <li class="worklog-options__item">Jira link</li>
-                <li class="worklog-options__item">Duplicate</li>
-                <li class="worklog-options__item">Add to favorite</li>
-                <li class="worklog-options__item">Delete</li>
-              </ul>
-            </li>
-            <li class="day__worklog-item">
-              <p class="day__interval-time">
-                10:00 <span class="day__interval-time_gray">— 11:15</span>
-              </p>
-              <div class="day__worklog-name-wrapper day__worklog-name-wrapper_full">
-                <span class="day__code">JRM-310</span>
-                <h4 class="day__worklog-name">Meeting with QA</h4>
-              </div>
-              <div class="day__worklog-bar">
-                <div class="day__worklog-value day__worklog-value_full"></div>
-              </div>
-              <span class="day__worklog-time">01:15:00</span>
-              <button class="day__btn">
-                <span class="visually-hidden">Play</span>
-              </button>
-              <ul class="worklog-options">
-                <li class="worklog-options__item">Jira link</li>
-                <li class="worklog-options__item">Duplicate</li>
-                <li class="worklog-options__item">Add to favorite</li>
-                <li class="worklog-options__item">Delete</li>
-              </ul>
-            </li>
-            <li class="day__worklog-item">
-              <div class="day__interval-time-btn">
-                <span class="day__amount">2</span>
-              </div>
-              <div class="day__worklog-name-wrapper day__worklog-name-wrapper_in-progress">
-                <span class="day__code">JRM-310</span>
-                <h4 class="day__worklog-name">Company branding</h4>
-              </div>
-              <div class="day__worklog-bar">
-                <div class="day__worklog-value day__worklog-value_in-progress"></div>
-              </div>
-              <span class="day__worklog-time">03:50:00</span>
-              <button class="day__btn">
-                <span class="visually-hidden">Play</span>
-              </button>
-              <ul class="worklog-options">
-                <li class="worklog-options__item">Jira link</li>
-                <li class="worklog-options__item">Duplicate</li>
-                <li class="worklog-options__item">Add to favorite</li>
-                <li class="worklog-options__item">Delete</li>
-              </ul>
-            </li>
-          </ul>
-          <div class="day__time-picker">
-            <div class="day__time-picher-range"></div>
-            <ul class="day__time-list">
-              <li>07:00</li>
-              <li>08:00</li>
-              <li>09:00</li>
-              <li>10:00</li>
-              <li>11:00</li>
-              <li>12:00</li>
-              <li>13:00</li>
-              <li>14:00</li>
-              <li>15:00</li>
-              <li>16:00</li>
-              <li>17:00</li>
-              <li>18:00</li>
-              <li>19:00</li>
-            </ul>
-          </div>
-        </section>
-        <section class="day-list__item day">
-          <div class="day__heading-wrapper">
-            <h3 class="day__date">
-              Tue, <span class="day__date_not-bold">June 09</span>
-            </h3>
-            <div class="day__total-time-wrapper">
-              <p class="day__total-time">08:00:00</p>
-              <div class="day__progress-bar">
-                <div class="day__progress-value day__progress-value_full"></div>
-              </div>
-            </div>
-            <button class="btn day__btn-download">
-              <span class="visually-hidden">Download</span>
-            </button>
-          </div>
-          <ul class="day__worklogs-list">
-            <li class="day__worklog-item">
-              <p class="day__interval-time">
-                09:00 <span class="day__interval-time_gray">— 10:00</span>
-              </p>
-              <div class="day__worklog-name-wrapper day__worklog-name-wrapper_full">
-                <span class="day__code">JRM-310</span>
-                <h4 class="day__worklog-name">Team standup</h4>
-              </div>
-              <div class="day__worklog-bar">
-                <div class="day__worklog-value"></div>
-              </div>
-              <span class="day__worklog-time">01:00:00</span>
-              <button class="day__btn">
-                <span class="visually-hidden">Play</span>
-              </button>
-              <ul class="worklog-options">
-                <li class="worklog-options__item">Jira link</li>
-                <li class="worklog-options__item">Duplicate</li>
-                <li class="worklog-options__item">Add to favorite</li>
-                <li class="worklog-options__item">Delete</li>
-              </ul>
-            </li>
-            <li class="day__worklog-item">
-              <p class="day__interval-time">
-                10:00 <span class="day__interval-time_gray">— 11:15</span>
-              </p>
-              <div class="day__worklog-name-wrapper day__worklog-name-wrapper_full">
-                <span class="day__code">JRM-310</span>
-                <h4 class="day__worklog-name">Meeting with QA</h4>
-              </div>
-              <div class="day__worklog-bar">
-                <div class="day__worklog-value"></div>
-              </div>
-              <span class="day__worklog-time">01:15:00</span>
-              <button class="day__btn">
-                <span class="visually-hidden">Play</span>
-              </button>
-              <ul class="worklog-options">
-                <li class="worklog-options__item">Jira link</li>
-                <li class="worklog-options__item">Duplicate</li>
-                <li class="worklog-options__item">Add to favorite</li>
-                <li class="worklog-options__item">Delete</li>
-              </ul>
-            </li>
-            <li class="day__worklog-item">
-              <p class="day__interval-time">
-                11:00 <span class="day__interval-time_gray">— 13:15</span>
-              </p>
-              <div class="day__worklog-name-wrapper day__worklog-name-wrapper_in-progress">
-                <span class="day__code">JRM-310</span>
-                <h4 class="day__worklog-name">Company branding</h4>
-              </div>
-              <div class="day__worklog-bar">
-                <div class="day__worklog-value"></div>
-              </div>
-              <span class="day__worklog-time">03:50:00</span>
-              <button class="day__btn">
-                <span class="visually-hidden">Play</span>
-              </button>
-              <ul class="worklog-options">
-                <li class="worklog-options__item">Jira link</li>
-                <li class="worklog-options__item">Duplicate</li>
-                <li class="worklog-options__item">Add to favorite</li>
-                <li class="worklog-options__item">Delete</li>
-              </ul>
-            </li>
-          </ul>
-          <div class="day__time-picker">
-            <div class="day__time-picher-range"></div>
-            <ul class="day__time-list">
-              <li>07:00</li>
-              <li>08:00</li>
-              <li>09:00</li>
-              <li>10:00</li>
-              <li>11:00</li>
-              <li>12:00</li>
-              <li>13:00</li>
-              <li>14:00</li>
-              <li>15:00</li>
-              <li>16:00</li>
-              <li>17:00</li>
-              <li>18:00</li>
-              <li>19:00</li>
-            </ul>
-          </div>
-        </section>
-      </section>
+  <header class="page-header">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item nav__item_active"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">Issues</a></li>
+        <li class="nav__item"><a href="#">Filer</a></li>
+        <li class="nav__item"><a href="#">Projects</a></li>
+      </ul>
+      <ul class="user-list">
+        <li class="user-list__item user-list__item_settings">
+          <a href="#"><span class="visually-hidden">Settings</span></a>
+        </li>
+        <li class="user-list__item user-list__item_info">
+          <a href="#"><span class="visually-hidden">Information</span></a>
+        </li>
+        <li class="user-list__item user-list__item_exit">
+          <a href="#"><span class="visually-hidden">Log out</span></a>
+        </li>
+        <li class="user-list__item user-list__item_profile">
+          <a href="#"><span class="visually-hidden">Your profile</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-      <section class="time-tracking">
-        <div class="time-tracking__title-wrapper">
-          <h2 class="time-tracking__title">Time tracking</h2>
-          <button class="time-tracking__options">
-            <span class="visually-hidden">Options</span>
-            <span class="time-tracking__round"></span>
+  <main class="page-main">
+    <h1 class="visually-hidden">Time Tracker</h1>
+    <section class="page-main__day-list days-list">
+      <h2 class="visually-hidden">Days List</h2>
+      <div class="days-list__heading">
+        <button class="heading-btn days-list__calendar">10 JUNE 2020</button>
+        <button class="heading-btn days-list__all">All</button>
+        <button class="heading-btn days-list__favorites">Favorites</button>
+      </div>
+      <section class="day-list__item day">
+        <div class="day__heading-wrapper">
+          <h3 class="day__date">
+            Wed, <span class="day__date_not-bold">June 10</span>
+          </h3>
+          <div class="day__total-time-wrapper">
+            <p class="day__total-time">06:05:00</p>
+            <div class="day__progress-bar">
+              <div class="day__progress-value"></div>
+            </div>
+          </div>
+          <button class="day__btn-download">
+            <span class="visually-hidden">Download</span>
           </button>
         </div>
-        <ul class="worklog-options">
-          <li class="worklog-options__item">Jira link</li>
-          <li class="worklog-options__item">Duplicate</li>
-          <li class="worklog-options__item">Add to favorite</li>
-          <li class="worklog-options__item">Delete</li>
+        <ul class="day__worklogs-list">
+          <li class="day__worklog-item">
+            <p class="day__interval-time">
+              09:00 <span class="day__interval-time_gray">— 10:00</span>
+            </p>
+            <div class="day__worklog-name-wrapper">
+              <span class="day__code">JRM-310</span>
+              <h4 class="day__worklog-name">Team standup</h4>
+            </div>
+            <div class="day__worklog-bar">
+              <div class="day__worklog-value"></div>
+            </div>
+            <span class="day__worklog-time">01:00:00</span>
+            <button class="day__btn">
+              <span class="visually-hidden">Play</span>
+            </button>
+            <ul class="worklog-options">
+              <li class="worklog-options__item">Jira link</li>
+              <li class="worklog-options__item">Duplicate</li>
+              <li class="worklog-options__item">Add to favorite</li>
+              <li class="worklog-options__item">Delete</li>
+            </ul>
+          </li>
+          <li class="day__worklog-item">
+            <p class="day__interval-time">
+              10:00 <span class="day__interval-time_gray">— 11:15</span>
+            </p>
+            <div class="day__worklog-name-wrapper day__worklog-name-wrapper_full">
+              <span class="day__code">JRM-310</span>
+              <h4 class="day__worklog-name">Meeting with QA</h4>
+            </div>
+            <div class="day__worklog-bar">
+              <div class="day__worklog-value day__worklog-value_full"></div>
+            </div>
+            <span class="day__worklog-time">01:15:00</span>
+            <button class="day__btn">
+              <span class="visually-hidden">Play</span>
+            </button>
+            <ul class="worklog-options">
+              <li class="worklog-options__item">Jira link</li>
+              <li class="worklog-options__item">Duplicate</li>
+              <li class="worklog-options__item">Add to favorite</li>
+              <li class="worklog-options__item">Delete</li>
+            </ul>
+          </li>
+          <li class="day__worklog-item">
+            <div class="day__interval-time-btn">
+              <span class="day__amount">2</span>
+            </div>
+            <div class="day__worklog-name-wrapper day__worklog-name-wrapper_in-progress">
+              <span class="day__code">JRM-310</span>
+              <h4 class="day__worklog-name">Company branding</h4>
+            </div>
+            <div class="day__worklog-bar">
+              <div class="day__worklog-value day__worklog-value_in-progress"></div>
+            </div>
+            <span class="day__worklog-time">03:50:00</span>
+            <button class="day__btn">
+              <span class="visually-hidden">Play</span>
+            </button>
+            <ul class="worklog-options">
+              <li class="worklog-options__item">Jira link</li>
+              <li class="worklog-options__item">Duplicate</li>
+              <li class="worklog-options__item">Add to favorite</li>
+              <li class="worklog-options__item">Delete</li>
+            </ul>
+          </li>
         </ul>
-        <button class="time-tracking__btn">
-          <span class="visually-hidden">Add new worklog</span>
+        <div class="day__time-picker">
+          <div class="day__time-picher-range"></div>
+          <ul class="day__time-list">
+            <li>07:00</li>
+            <li>08:00</li>
+            <li>09:00</li>
+            <li>10:00</li>
+            <li>11:00</li>
+            <li>12:00</li>
+            <li>13:00</li>
+            <li>14:00</li>
+            <li>15:00</li>
+            <li>16:00</li>
+            <li>17:00</li>
+            <li>18:00</li>
+            <li>19:00</li>
+          </ul>
+        </div>
+      </section>
+      <section class="day-list__item day">
+        <div class="day__heading-wrapper">
+          <h3 class="day__date">
+            Tue, <span class="day__date_not-bold">June 09</span>
+          </h3>
+          <div class="day__total-time-wrapper">
+            <p class="day__total-time">08:00:00</p>
+            <div class="day__progress-bar">
+              <div class="day__progress-value day__progress-value_full"></div>
+            </div>
+          </div>
+          <button class="btn day__btn-download">
+            <span class="visually-hidden">Download</span>
+          </button>
+        </div>
+        <ul class="day__worklogs-list">
+          <li class="day__worklog-item">
+            <p class="day__interval-time">
+              09:00 <span class="day__interval-time_gray">— 10:00</span>
+            </p>
+            <div class="day__worklog-name-wrapper day__worklog-name-wrapper_full">
+              <span class="day__code">JRM-310</span>
+              <h4 class="day__worklog-name">Team standup</h4>
+            </div>
+            <div class="day__worklog-bar">
+              <div class="day__worklog-value"></div>
+            </div>
+            <span class="day__worklog-time">01:00:00</span>
+            <button class="day__btn">
+              <span class="visually-hidden">Play</span>
+            </button>
+            <ul class="worklog-options">
+              <li class="worklog-options__item">Jira link</li>
+              <li class="worklog-options__item">Duplicate</li>
+              <li class="worklog-options__item">Add to favorite</li>
+              <li class="worklog-options__item">Delete</li>
+            </ul>
+          </li>
+          <li class="day__worklog-item">
+            <p class="day__interval-time">
+              10:00 <span class="day__interval-time_gray">— 11:15</span>
+            </p>
+            <div class="day__worklog-name-wrapper day__worklog-name-wrapper_full">
+              <span class="day__code">JRM-310</span>
+              <h4 class="day__worklog-name">Meeting with QA</h4>
+            </div>
+            <div class="day__worklog-bar">
+              <div class="day__worklog-value"></div>
+            </div>
+            <span class="day__worklog-time">01:15:00</span>
+            <button class="day__btn">
+              <span class="visually-hidden">Play</span>
+            </button>
+            <ul class="worklog-options">
+              <li class="worklog-options__item">Jira link</li>
+              <li class="worklog-options__item">Duplicate</li>
+              <li class="worklog-options__item">Add to favorite</li>
+              <li class="worklog-options__item">Delete</li>
+            </ul>
+          </li>
+          <li class="day__worklog-item">
+            <p class="day__interval-time">
+              11:00 <span class="day__interval-time_gray">— 13:15</span>
+            </p>
+            <div class="day__worklog-name-wrapper day__worklog-name-wrapper_in-progress">
+              <span class="day__code">JRM-310</span>
+              <h4 class="day__worklog-name">Company branding</h4>
+            </div>
+            <div class="day__worklog-bar">
+              <div class="day__worklog-value"></div>
+            </div>
+            <span class="day__worklog-time">03:50:00</span>
+            <button class="day__btn">
+              <span class="visually-hidden">Play</span>
+            </button>
+            <ul class="worklog-options">
+              <li class="worklog-options__item">Jira link</li>
+              <li class="worklog-options__item">Duplicate</li>
+              <li class="worklog-options__item">Add to favorite</li>
+              <li class="worklog-options__item">Delete</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="day__time-picker">
+          <div class="day__time-picher-range"></div>
+          <ul class="day__time-list">
+            <li>07:00</li>
+            <li>08:00</li>
+            <li>09:00</li>
+            <li>10:00</li>
+            <li>11:00</li>
+            <li>12:00</li>
+            <li>13:00</li>
+            <li>14:00</li>
+            <li>15:00</li>
+            <li>16:00</li>
+            <li>17:00</li>
+            <li>18:00</li>
+            <li>19:00</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <section class="time-tracking">
+      <div class="time-tracking__title-wrapper">
+        <h2 class="time-tracking__title">Time tracking</h2>
+        <button class="time-tracking__options">
+          <span class="visually-hidden">Options</span>
+          <span class="time-tracking__round"></span>
         </button>
-        <p class="time-tracking__phrase">NEW WORKLOG</p>
-      </section>
+      </div>
+      <ul class="worklog-options">
+        <li class="worklog-options__item">Jira link</li>
+        <li class="worklog-options__item">Duplicate</li>
+        <li class="worklog-options__item">Add to favorite</li>
+        <li class="worklog-options__item">Delete</li>
+      </ul>
+      <button class="time-tracking__btn">
+        <span class="visually-hidden">Add new worklog</span>
+      </button>
+      <p class="time-tracking__phrase">NEW WORKLOG</p>
+    </section>
 
-      <section class="google-sync">
-        <div class="google-sync__title-wrapper">
-          <h2 class="google-sync__title">Google calendar sync</h2>
-          <input id="google-check" class="visually-hidden google-sync__checkbox" type="checkbox" name="sync-checkbox" />
-          <label for="google-check" class="google-sync__label"></label>
-          <button class="google-sync__calendar">
-            <span class="visually-hidden">Open calendar</span>
+    <section class="google-sync">
+      <div class="google-sync__title-wrapper">
+        <h2 class="google-sync__title">Google calendar sync</h2>
+        <input id="google-check" class="visually-hidden google-sync__checkbox" type="checkbox" name="sync-checkbox" />
+        <label for="google-check" class="google-sync__label"></label>
+        <button class="google-sync__calendar">
+          <span class="visually-hidden">Open calendar</span>
+        </button>
+      </div>
+      <ul class="google-sync__event-list">
+        <li class="google-sync__event-item google-sync__event-item_turquoise">
+          <h3 class="google-sync__event-name">Logo redesign</h3>
+          <p class="google-sync__event-time">09:00 — 10:00</p>
+        </li>
+        <li class="google-sync__event-item google-sync__event-item_orange">
+          <h3 class="google-sync__event-name">Meeting with CEO</h3>
+          <p class="google-sync__event-time">14:00 — 14:45</p>
+        </li>
+        <li class="google-sync__event-item google-sync__event-item_lavender">
+          <h3 class="google-sync__event-name">Brainstorm</h3>
+          <p class="google-sync__event-time">15:00 — 16:15</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="popup-new-worklog">
+      <h2 class="popup-new-worklog__title">New worklog</h2>
+      <form class="popup-new-worklog__form" method="POST">
+        <div class="popup-new-worklog__slider slider">
+          <div class="slider__track">
+            <div class="slider__range"></div>
+            <span class="slider__thumb slider__thumb_left"></span>
+            <span class="slider__thumb slider__thumb_right"></span>
+          </div>
+          <span class="slider__range-time slider__range-time_start">09:00</span>
+          <span class="slider__range-time slider__range-time_end">16:30</span>
+        </div>
+        <p class="popup-new-worklog__input-wrapper">
+          <label class="popup-new-worklog__label" for="worklog">
+            Worklog name
+          </label>
+          <input class="popup-new-worklog__input" id="worklog" name="worklog" placeholder="Enter the worklog name" />
+        </p>
+        <p class="popup-new-worklog__input-wrapper">
+          <label class="popup-new-worklog__label" for="issue">
+            Issue
+          </label>
+          <input class="popup-new-worklog__input" id="issue" name="issue" placeholder="Enter the issue name" />
+        </p>
+        <div class="popup-new-worklog__btn-wrapper">
+          <button class="popup-new-worklog__submit">
+            <span class="visually-hidden">Span</span>
+          </button>
+          <button class="popup-new-worklog__close" disabled>
+            <span class="visually-hidden">Close</span>
           </button>
         </div>
-        <ul class="google-sync__event-list">
-          <li class="google-sync__event-item google-sync__event-item_turquoise">
-            <h3 class="google-sync__event-name">Logo redesign</h3>
-            <p class="google-sync__event-time">09:00 — 10:00</p>
-          </li>
-          <li class="google-sync__event-item google-sync__event-item_orange">
-            <h3 class="google-sync__event-name">Meeting with CEO</h3>
-            <p class="google-sync__event-time">14:00 — 14:45</p>
-          </li>
-          <li class="google-sync__event-item google-sync__event-item_lavender">
-            <h3 class="google-sync__event-name">Brainstorm</h3>
-            <p class="google-sync__event-time">15:00 — 16:15</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="popup-new-worklog">
-        <h2 class="popup-new-worklog__title">New worklog</h2>
-        <form class="popup-new-worklog__form" method="POST">
-          <div class="popup-new-worklog__range-wrapper">
-            <input class="popup-new-worklog__range" type="range" name="time-range" />
-            <span class="popup-new-worklog__range-time">09:00</span>
-            <span class="popup-new-worklog__range-time">16:30</span>
-          </div>
-          <p class="popup-new-worklog__input-wrapper">
-            <label class="popup-new-worklog__label" for="worklog">
-              Worklog name
-            </label>
-            <input class="popup-new-worklog__input" id="worklog" name="worklog" placeholder="Enter the worklog name" />
-          </p>
-          <p class="popup-new-worklog__input-wrapper">
-            <label class="popup-new-worklog__label" for="issue">
-              Issue
-            </label>
-            <input class="popup-new-worklog__input" id="issue" name="issue" placeholder="Enter the issue name" />
-          </p>
-          <div class="popup-new-worklog__btn-wrapper">
-            <button class="popup-new-worklog__submit">
-              <span class="visually-hidden">Span</span>
-            </button>
-            <button class="popup-new-worklog__close" disabled>
-              <span class="visually-hidden">Close</span>
-            </button>
-          </div>
-        </form>
-      </section>
-      <div class="modal-overlay"></div>
-    </main>
-  </div>
+      </form>
+    </section>
+    <div class="modal-overlay"></div>
+  </main>
 </body>
 
 </html>

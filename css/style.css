@@ -672,10 +672,35 @@ body {
   font-weight: 500; }
 
 .worklog-options {
-<<<<<<< HEAD
-  display: none; }
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 8px 0;
+  width: 169px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
+          box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
+  border-radius: 10px;
+  z-index: 1; }
+
+.worklog-options__btn {
+  border: none;
+  padding: 11px 15px 10px 32px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 23px;
+  color: #4F4F4F;
+  width: 100%;
+  text-align: start;
+  cursor: pointer; }
+  .worklog-options__btn:hover, .worklog-options__btn:focus {
+    outline: none;
+    background-color: #E3F3FF; }
 
 .popup-new-worklog {
+  display: none;
   width: 660px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -742,56 +767,12 @@ body {
     color: #C4CACB; }
 
 .popup-new-worklog__btn-wrapper {
-=======
-  position: absolute;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  padding: 8px 0;
-  width: 169px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
-          box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
-  border-radius: 10px;
-  z-index: 1; }
-
-.worklog-options__btn {
-  border: none;
-  padding: 11px 15px 10px 32px;
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 23px;
-  color: #4F4F4F;
-  width: 100%;
-  text-align: start;
-  cursor: pointer; }
-  .worklog-options__btn:hover, .worklog-options__btn:focus {
-    outline: none;
-    background-color: #E3F3FF; }
-
-.notification {
-  display: none;
-  position: fixed;
-  bottom: 48px;
-  right: 61px;
-  width: 343px;
-  min-height: 138px;
-  padding: 28px 25px 27px 34px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
-          box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
-  border-radius: 20px; }
-
-.notification__status-wrapper {
->>>>>>> develop
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-<<<<<<< HEAD
   width: 117px;
   margin: 0 auto; }
 
@@ -929,7 +910,27 @@ body {
 
 .modal-open {
   display: block; }
-=======
+
+.notification {
+  display: none;
+  position: fixed;
+  bottom: 48px;
+  right: 61px;
+  width: 343px;
+  min-height: 138px;
+  padding: 28px 25px 27px 34px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
+          box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
+  border-radius: 20px; }
+
+.notification__status-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -972,4 +973,3 @@ body {
   line-height: 26px;
   font-weight: 500;
   color: #1E1E1E; }
->>>>>>> develop

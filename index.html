@@ -20,29 +20,33 @@
       </ul>
       <ul class="user-list">
         <li class="user-list__item user-list__item_settings">
-          <a href="#"><span class="visually-hidden">Settings</span></a>
+          <a class="user-list__link" href="#"><span class="visually-hidden">Settings</span></a>
         </li>
         <li class="user-list__item user-list__item_info">
-          <a href="#"><span class="visually-hidden">Information</span></a>
+          <a class="user-list__link" href="#"><span class="visually-hidden">Information</span></a>
         </li>
         <li class="user-list__item user-list__item_exit">
-          <a href="#"><span class="visually-hidden">Log out</span></a>
+          <a class="user-list__link" href="#"><span class="visually-hidden">Log out</span></a>
         </li>
         <li class="user-list__item user-list__item_profile">
-          <a href="#"><span class="visually-hidden">Your profile</span></a>
+          <a class="user-list__link user-list__link_profile" href="#"><span class="visually-hidden">Your
+              profile</span></a>
         </li>
       </ul>
     </nav>
   </header>
-
   <main class="page-main">
     <h1 class="visually-hidden">Time Tracker</h1>
     <section class="page-main__day-list days-list">
       <h2 class="visually-hidden">Days List</h2>
       <div class="days-list__heading">
         <button class="heading-btn days-list__calendar">10 JUNE 2020</button>
-        <button class="heading-btn days-list__all">All</button>
-        <button class="heading-btn days-list__favorites">Favorites</button>
+        <button class="heading-btn day__filter day__filter_margin day__filter_active">
+          All
+        </button>
+        <button class="heading-btn day__filter">
+          Favorites
+        </button>
       </div>
       <section class="day-list__item day">
         <div class="day__heading-wrapper">
@@ -75,11 +79,19 @@
             <button class="day__btn">
               <span class="visually-hidden">Play</span>
             </button>
-            <ul class="worklog-options">
-              <li class="worklog-options__item">Jira link</li>
-              <li class="worklog-options__item">Duplicate</li>
-              <li class="worklog-options__item">Add to favorite</li>
-              <li class="worklog-options__item">Delete</li>
+            <ul class="worklog-options day__worklog-menu">
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Jira link</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Duplicate</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Add to favorite</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Delete</button>
+              </li>
             </ul>
           </li>
           <li class="day__worklog-item">
@@ -97,11 +109,19 @@
             <button class="day__btn">
               <span class="visually-hidden">Play</span>
             </button>
-            <ul class="worklog-options">
-              <li class="worklog-options__item">Jira link</li>
-              <li class="worklog-options__item">Duplicate</li>
-              <li class="worklog-options__item">Add to favorite</li>
-              <li class="worklog-options__item">Delete</li>
+            <ul class="worklog-options day__worklog-menu">
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Jira link</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Duplicate</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Add to favorite</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Delete</button>
+              </li>
             </ul>
           </li>
           <li class="day__worklog-item">
@@ -119,11 +139,19 @@
             <button class="day__btn">
               <span class="visually-hidden">Play</span>
             </button>
-            <ul class="worklog-options">
-              <li class="worklog-options__item">Jira link</li>
-              <li class="worklog-options__item">Duplicate</li>
-              <li class="worklog-options__item">Add to favorite</li>
-              <li class="worklog-options__item">Delete</li>
+            <ul class="worklog-options day__worklog-menu">
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Jira link</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Duplicate</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Add to favorite</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Delete</button>
+              </li>
             </ul>
           </li>
         </ul>
@@ -146,7 +174,7 @@
           </ul>
         </div>
       </section>
-      <section class="day-list__item day">
+      <section class="day">
         <div class="day__heading-wrapper">
           <h3 class="day__date">
             Tue, <span class="day__date_not-bold">June 09</span>
@@ -177,11 +205,19 @@
             <button class="day__btn">
               <span class="visually-hidden">Play</span>
             </button>
-            <ul class="worklog-options">
-              <li class="worklog-options__item">Jira link</li>
-              <li class="worklog-options__item">Duplicate</li>
-              <li class="worklog-options__item">Add to favorite</li>
-              <li class="worklog-options__item">Delete</li>
+            <ul class="worklog-options day__worklog-menu">
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Jira link</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Duplicate</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Add to favorite</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Delete</button>
+              </li>
             </ul>
           </li>
           <li class="day__worklog-item">
@@ -199,11 +235,19 @@
             <button class="day__btn">
               <span class="visually-hidden">Play</span>
             </button>
-            <ul class="worklog-options">
-              <li class="worklog-options__item">Jira link</li>
-              <li class="worklog-options__item">Duplicate</li>
-              <li class="worklog-options__item">Add to favorite</li>
-              <li class="worklog-options__item">Delete</li>
+            <ul class="worklog-options day__worklog-menu">
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Jira link</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Duplicate</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Add to favorite</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Delete</button>
+              </li>
             </ul>
           </li>
           <li class="day__worklog-item">
@@ -221,11 +265,19 @@
             <button class="day__btn">
               <span class="visually-hidden">Play</span>
             </button>
-            <ul class="worklog-options">
-              <li class="worklog-options__item">Jira link</li>
-              <li class="worklog-options__item">Duplicate</li>
-              <li class="worklog-options__item">Add to favorite</li>
-              <li class="worklog-options__item">Delete</li>
+            <ul class="worklog-options day__worklog-menu">
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Jira link</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Duplicate</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Add to favorite</button>
+              </li>
+              <li class="worklog-options__item">
+                <button class="worklog-options__btn">Delete</button>
+              </li>
             </ul>
           </li>
         </ul>
@@ -257,13 +309,21 @@
           <span class="visually-hidden">Options</span>
           <span class="time-tracking__round"></span>
         </button>
+        <ul class="worklog-options time-tracking__menu">
+          <li class="worklog-options__item">
+            <button class="worklog-options__btn">Jira link</button>
+          </li>
+          <li class="worklog-options__item">
+            <button class="worklog-options__btn">Duplicate</button>
+          </li>
+          <li class="worklog-options__item">
+            <button class="worklog-options__btn">Add to favorite</button>
+          </li>
+          <li class="worklog-options__item">
+            <button class="worklog-options__btn">Delete</button>
+          </li>
+        </ul>
       </div>
-      <ul class="worklog-options">
-        <li class="worklog-options__item">Jira link</li>
-        <li class="worklog-options__item">Duplicate</li>
-        <li class="worklog-options__item">Add to favorite</li>
-        <li class="worklog-options__item">Delete</li>
-      </ul>
       <button class="time-tracking__btn">
         <span class="visually-hidden">Add new worklog</span>
       </button>
@@ -294,43 +354,53 @@
         </li>
       </ul>
     </section>
-
-    <section class="popup-new-worklog">
-      <h2 class="popup-new-worklog__title">New worklog</h2>
-      <form class="popup-new-worklog__form" method="POST">
-        <div class="popup-new-worklog__slider slider">
-          <div class="slider__track">
-            <div class="slider__range"></div>
-            <span class="slider__thumb slider__thumb_left"></span>
-            <span class="slider__thumb slider__thumb_right"></span>
-          </div>
-          <span class="slider__range-time slider__range-time_start">09:00</span>
-          <span class="slider__range-time slider__range-time_end">16:30</span>
-        </div>
-        <p class="popup-new-worklog__input-wrapper">
-          <label class="popup-new-worklog__label" for="worklog">
-            Worklog name
-          </label>
-          <input class="popup-new-worklog__input" id="worklog" name="worklog" placeholder="Enter the worklog name" />
-        </p>
-        <p class="popup-new-worklog__input-wrapper">
-          <label class="popup-new-worklog__label" for="issue">
-            Issue
-          </label>
-          <input class="popup-new-worklog__input" id="issue" name="issue" placeholder="Enter the issue name" />
-        </p>
-        <div class="popup-new-worklog__btn-wrapper">
-          <button class="popup-new-worklog__submit">
-            <span class="visually-hidden">Span</span>
-          </button>
-          <button class="popup-new-worklog__close" disabled>
-            <span class="visually-hidden">Close</span>
-          </button>
-        </div>
-      </form>
-    </section>
-    <div class="modal-overlay"></div>
   </main>
+  <section class="notification">
+    <h2 class="visually-hidden">Notification message</h2>
+    <div class="notification__status-wrapper">
+      <span class="notification__status"></span>
+      <button class="notification__btn-close"></button>
+    </div>
+    <p class="notification__message">
+      Nothing to log. Please check issues assignment or description.
+    </p>
+  </section>
+
+  <section class="popup-new-worklog">
+    <h2 class="popup-new-worklog__title">New worklog</h2>
+    <form class="popup-new-worklog__form" method="POST">
+      <div class="popup-new-worklog__slider slider">
+        <div class="slider__track">
+          <div class="slider__range"></div>
+          <span class="slider__thumb slider__thumb_left"></span>
+          <span class="slider__thumb slider__thumb_right"></span>
+        </div>
+        <span class="slider__range-time slider__range-time_start">09:00</span>
+        <span class="slider__range-time slider__range-time_end">16:30</span>
+      </div>
+      <p class="popup-new-worklog__input-wrapper">
+        <label class="popup-new-worklog__label" for="worklog">
+          Worklog name
+        </label>
+        <input class="popup-new-worklog__input" id="worklog" name="worklog" placeholder="Enter the worklog name" />
+      </p>
+      <p class="popup-new-worklog__input-wrapper">
+        <label class="popup-new-worklog__label" for="issue">
+          Issue
+        </label>
+        <input class="popup-new-worklog__input" id="issue" name="issue" placeholder="Enter the issue name" />
+      </p>
+      <div class="popup-new-worklog__btn-wrapper">
+        <button class="popup-new-worklog__submit">
+          <span class="visually-hidden">Span</span>
+        </button>
+        <button class="popup-new-worklog__close" disabled>
+          <span class="visually-hidden">Close</span>
+        </button>
+      </div>
+    </form>
+  </section>
+  <div class="modal-overlay"></div>
 </body>
 
 </html>

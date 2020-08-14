@@ -1,6 +1,7 @@
 @import 'color';
 
 .time-tracking {
+    position: relative;
     padding-left: 38px;
     padding-top: 10px;
     padding-right: 60px;
@@ -28,6 +29,17 @@
     cursor: pointer;
 }
 
+.time-tracking__menu {
+    display: none;
+    top: 40px;
+    right: 63px;
+}
+
+.time-tracking__options:hover~.time-tracking__menu,
+.time-tracking__options:focus~.time-tracking__menu {
+    display: block;
+}
+
 .time-tracking__round {
     display: block;
     width: 4px;
@@ -51,7 +63,9 @@
     cursor: pointer;
     box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
 
-    &:hover {
+    &:hover,
+    &:focus {
+        outline: none;
         box-shadow: 0px 10px 30px rgba(163, 163, 163, 0.44);
     }
 

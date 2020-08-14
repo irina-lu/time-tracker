@@ -1,8 +1,14 @@
+@import 'color';
+
 .heading-btn {
+    padding: 0;
     border: none;
     font-family: inherit;
     font-size: 18px;
     line-height: 26px;
+    font-weight: 500;
+    color: $font-light-gray;
     border-radius: 30px;
+    background-color: transparent;
     cursor: pointer;
 }

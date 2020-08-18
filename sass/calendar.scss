@@ -1,0 +1,137 @@
+@import 'color';
+
+.calendar {
+    display: none;
+    position: absolute;
+    top: 64px;
+    padding: 39px 53px 35px;
+    width: 462px;
+    background-color: $white;
+    box-shadow: 0px 7px 30px rgba(148, 156, 160, 0.08);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.calendar__month {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    color: $black;
+}
+
+.calendar__weekdays-list {
+    list-style: none;
+    margin: 0;
+    padding: 13px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar__weekday {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: $weekday-color;
+}
+
+.calendar__days-list {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 43px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.calendar__day {
+    position: relative;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    color: $day-color;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+
+    &:nth-child(7n+7) {
+        margin-right: 0;
+    }
+
+    &_another-month {
+        opacity: 0.4;
+    }
+
+    &_chosen {
+        background-color: $violet;
+        border-radius: 50%;
+        color: $white;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: calc(50% - 20px/2);
+        bottom: 10px;
+        width: 20px;
+        height: 6px;
+        border: 1px solid $white;
+        border-radius: 48px;
+        background-color: $done;
+    }
+
+    &_missed::before {
+        background-color: $error;
+    }
+
+    &_in-progress::before {
+        background-color: $in-progress;
+    }
+}
+
+.calendar__statuses-wrapper {
+    margin: 0 auto;
+    display: flex;
+    width: 225px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar__status {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-left: 25px;
+    font-size: 11px;
+    line-height: 13px;
+    color: $font-mid-gray;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 20px;
+        height: 6px;
+        border: 1px solid $white;
+        border-radius: 48px;
+        background-color: $done;
+    }
+
+    &_missed::before {
+        background-color: $error;
+    }
+
+    &_in-progress::before {
+        background-color: $in-progress;
+    }
+}

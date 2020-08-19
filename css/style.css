@@ -218,13 +218,13 @@ body {
   margin-bottom: 75px; }
 
 .day {
-  padding-right: 68px; }
+  padding-right: 82px; }
 
 .day__heading-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 51px;
+  padding-right: 36px;
   padding-bottom: 16px;
   border-bottom: 1px solid #E9ECF2; }
 
@@ -302,6 +302,9 @@ body {
   list-style: none;
   margin-bottom: 45px; }
 
+.day__worklog-item-wrapper {
+  position: relative; }
+
 .day__worklog-item {
   position: relative;
   display: -webkit-box;
@@ -311,7 +314,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 33px;
-  padding-right: 50px;
+  padding-right: 35px;
   border-bottom: 1px dashed #E9ECF2; }
 
 .day__interval-time {
@@ -438,10 +441,55 @@ body {
     background-position: center;
     background-repeat: no-repeat; }
 
+.day__on-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -37px;
+  width: 58px;
+  height: 100%;
+  background-color: #3744BD;
+  border-radius: 0px 10px 10px 0px; }
+
+.day__options-btn {
+  border: none;
+  background-color: transparent;
+  padding: 6px 9px 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: 7px;
+  margin-top: calc(50% + 4px);
+  cursor: pointer; }
+
+.day__btn-round {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 7px 0px 0px #ffffff;
+          box-shadow: 0px 7px 0px 0px #ffffff; }
+
+.day__worklog-item-wrapper:hover {
+  max-width: 1141px; }
+  .day__worklog-item-wrapper:hover .day__worklog-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
+            box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
+    padding-right: 35px;
+    z-index: 1; }
+
+.day__worklog-item-wrapper:hover .day__on-hover {
+  display: block; }
+
 .day__worklog-menu {
   display: none;
   top: 93px;
-  right: -24px; }
+  right: -37px; }
+
+.day__on-hover:hover ~ .day__worklog-menu {
+  display: block; }
 
 .day__time-picher-range {
   width: 100%;

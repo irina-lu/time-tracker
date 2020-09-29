@@ -1,0 +1,63 @@
+@import 'color';
+
+.days-list {
+    border-right: 1px solid $border;
+}
+
+.days-list__heading {
+    padding-left: 24px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 49px;
+}
+
+.day-list__calendar-wrapper {
+    position: relative;
+}
+
+.days-list__calendar {
+    position: relative;
+    background-color: $light-gray;
+    font-size: 16px;
+    font-weight: 400;
+    color: $violet;
+    padding: 20px 62px 13px 33px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 24px;
+        right: 31px;
+        width: 12px;
+        height: 12px;
+        background-image: url(../img/icon/calendar.svg);
+    }
+
+    &:hover~.calendar,
+    &:active~.calendar {
+        display: block;
+    }
+}
+
+.day__filter {
+    &_margin {
+        margin-left: auto;
+        margin-right: 23px;
+    }
+
+    &:last-of-type {
+        padding-right: 33px;
+    }
+}
+
+.day__filter_active {
+    padding: 10px 27px 11px 29px;
+    color: $font-dark-gray;
+    background-color: $light-gray;
+    border-radius: 30px;
+}
+
+.day-list__item {
+    margin-bottom: 75px;
+}

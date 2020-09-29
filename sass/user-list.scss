@@ -1,0 +1,69 @@
+@import "color";
+
+.user-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.user-list__item {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+
+    &_settings {
+        background-image: url("../img/icon/settings.svg");
+    }
+
+    &_info {
+        background-image: url("../img/icon/info.svg");
+    }
+
+    &_exit {
+        background-image: url("../img/icon/exit.svg");
+    }
+
+    &_profile {
+        width: 46px;
+        height: 46px;
+        margin-right: 0;
+        background-image: url("../img/avatar.png");
+    }
+}
+
+.user-list__link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover::after,
+    &:focus::after {
+        content: "";
+        position: absolute;
+        bottom: -32px;
+        left: -5px;
+        width: 30px;
+        height: 3px;
+        border-radius: 3px;
+        background-color: $white;
+    }
+
+    &_profile:hover::after,
+    &_profile:focus::after {
+        bottom: -19px;
+        left: -5px;
+        width: 56px;
+    }
+
+}

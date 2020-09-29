@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@import 'color';
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    background-color: $background-page;
+}
+
+@import 'visually-hidden';
+@import 'page-header';
+@import 'heading-btn';
+@import 'nav';
+@import 'user-list';
+@import 'page-main';
+@import 'day-list';
+@import 'day';
+@import 'time-tracking';
+@import 'google-sync';
+@import 'worklog-options';
+@import 'popup-new-worklog';
+@import 'slider';
+@import 'modal-overlay';
+@import 'modal-open';
+@import 'notification';
+@import 'calendar';

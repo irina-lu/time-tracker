@@ -1,0 +1,65 @@
+@import 'color';
+
+.slider__track {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: $light-gray;
+    border-radius: 10px;
+    margin-bottom: 23px;
+}
+
+.slider__range {
+    width: 222px;
+    height: 10px;
+    background: $in-progress;
+    box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
+    border-radius: 5px;
+    margin-left: 120px;
+}
+
+.slider__thumb {
+    position: absolute;
+    top: -3px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: $in-progress;
+    border-radius: 50%;
+    border: 5px solid $white;
+    box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
+    cursor: pointer;
+
+    &_left {
+        left: 112px;
+    }
+
+    &_right {
+        right: 193px;
+    }
+}
+
+.slider__range-time {
+    position: relative;
+    font-size: 16px;
+    line-height: 23px;
+    color: $font-dark-gray;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -13px;
+        left: 19px;
+        width: 1px;
+        height: 10px;
+        background-color: $in-progress;
+    }
+
+    &_start {
+        margin-left: 99px;
+    }
+
+    &_end {
+        margin-left: 181px;
+    }
+}

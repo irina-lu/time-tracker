@@ -1,0 +1,33 @@
+@import 'color';
+
+.worklog-options {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 8px 0;
+    width: 169px;
+    background: $white;
+    box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.worklog-options__btn {
+    border: none;
+    padding: 11px 15px 10px 32px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 23px;
+    color: $font-dark-gray;
+    width: 100%;
+    text-align: start;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $skyblue;
+    }
+}

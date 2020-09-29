@@ -1,0 +1,94 @@
+@import 'color';
+
+.time-tracking {
+    position: relative;
+    padding-left: 38px;
+    padding-top: 10px;
+    padding-right: 60px;
+    border-bottom: 1px solid $border;
+}
+
+.time-tracking__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.time-tracking__title {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.time-tracking__options {
+    padding: 13px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.time-tracking__menu {
+    display: none;
+    top: 40px;
+    right: 63px;
+}
+
+.time-tracking__options:hover~.time-tracking__menu,
+.time-tracking__options:focus~.time-tracking__menu {
+    display: block;
+}
+
+.time-tracking__round {
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $font-gray;
+    box-shadow: 7px 0px 0px 0px $font-gray, -7px 0px 0px 0px $font-gray;
+}
+
+.time-tracking__btn {
+    padding: 0;
+    border: none;
+    display: block;
+    margin-left: 236px;
+    margin-bottom: 23px;
+    position: relative;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: $white;
+    cursor: pointer;
+    box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
+
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: 0px 10px 30px rgba(163, 163, 163, 0.44);
+    }
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        top: 32px;
+        left: 25px;
+        width: 16px;
+        height: 2px;
+        border-radius: 5px;
+        background-color: #3744bd;
+    }
+
+    &::after {
+        transform: rotate(90deg);
+    }
+}
+
+.time-tracking__phrase {
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 214px;
+    color: $font-gray;
+}

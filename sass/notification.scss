@@ -1,0 +1,64 @@
+@import "color";
+
+.notification {
+    display: none;
+    position: fixed;
+    bottom: 48px;
+    right: 61px;
+    width: 343px;
+    min-height: 138px;
+    padding: 28px 25px 27px 34px;
+    background: $white;
+    box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.notification__status-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.notification__status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $in-progress;
+}
+
+.notification__btn-close {
+    padding: 0;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 5px;
+        height: 9px;
+        width: 1px;
+        background-color: $font-gray;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+.notification__message {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: $font-black;
+}

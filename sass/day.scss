@@ -273,6 +273,7 @@
 
 .day__worklog-item-wrapper:hover {
   max-width: 1141px;
+
   & .day__worklog-item {
     background-color: $white;
     border-radius: 10px;
@@ -288,11 +289,11 @@
 
 .day__worklog-menu {
   display: none;
-  top: 93px;
+  top: 91px;
   right: -37px;
 }
 
-.day__on-hover:hover ~ .day__worklog-menu {
+.day__on-hover:hover~.day__worklog-menu {
   display: block;
 }
 

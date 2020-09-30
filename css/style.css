@@ -20,6 +20,10 @@ body {
   overflow: hidden; }
 
 .page-header {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 3;
+  top: 0;
   width: 100%;
   background-color: #3744BD;
   color: #ffffff;
@@ -45,7 +49,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1781px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-width: 1300px; }
 
 .nav__list {
   margin: 0;
@@ -160,7 +165,8 @@ body {
   color: #1E1E1E;
   display: grid;
   grid-template-columns: 66.23% 33.76%;
-  grid-template-rows: 364px 1fr; }
+  grid-template-rows: 364px 1fr;
+  min-width: 1300px; }
 
 .page-main__day-list {
   grid-row: 1/3; }
@@ -485,7 +491,7 @@ body {
 
 .day__worklog-menu {
   display: none;
-  top: 93px;
+  top: 91px;
   right: -37px; }
 
 .day__on-hover:hover ~ .day__worklog-menu {
@@ -736,7 +742,9 @@ body {
   -webkit-box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
           box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
   border-radius: 10px;
-  z-index: 1; }
+  z-index: 2; }
+  .worklog-options:hover {
+    display: block; }
 
 .worklog-options__btn {
   border: none;
@@ -1040,6 +1048,8 @@ body {
           box-shadow: 0px 7px 30px rgba(148, 156, 160, 0.08);
   border-radius: 10px;
   z-index: 1; }
+  .calendar:hover {
+    display: block; }
 
 .calendar__month {
   margin: 0;

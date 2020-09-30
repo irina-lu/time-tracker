@@ -1,6 +1,9 @@
 @import 'color';
 
 .page-header {
+    position: sticky;
+    z-index: 3;
+    top: 0;
     width: 100%;
     background-color: $violet;
     color: $white;
